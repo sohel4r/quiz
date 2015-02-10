@@ -48,7 +48,12 @@
 								<input type="password" class="form-control" name="password_confirmation">
 							</div>
 						</div>
-
+						<div class="form-group">
+							<label class="col-md-4 control-label">Mobile Number</label>
+							<div class="col-md-6">
+								<input type="tel" class="form-control" name="mobile">
+							</div>
+						</div>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
 								<button type="submit" class="btn btn-primary">

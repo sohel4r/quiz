@@ -12,7 +12,7 @@ class CreateAnswersTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('answer', function(Blueprint $table)
+		Schema::create('answers', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('question_id');
@@ -29,7 +29,7 @@ class CreateAnswersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('answer');
+		Schema::drop('answers');
 	}
 
 }

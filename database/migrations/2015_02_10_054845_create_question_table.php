@@ -12,10 +12,11 @@ class CreateQuestionTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('question', function(Blueprint $table)
+		Schema::create('questions', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->text('question')->unique();
+			$table->text('image')->nullable();
 			$table->timestamps();
 		});
 	}
@@ -27,7 +28,7 @@ class CreateQuestionTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('question');
+		Schema::drop('questions');
 	}
 
 }
